@@ -10,6 +10,6 @@ public class Sample06 {
 
     public static void main(String[] args) {
         List<Integer> costBeforeTax = Arrays.asList(100, 200, 300, 400);
-        costBeforeTax.stream().map(cost->cost * 1.12).forEach(cost-> System.out.println(cost));
+        costBeforeTax.stream().map(cost->cost + .12*cost).forEach(cost-> System.out.println(cost));
     }
 }
